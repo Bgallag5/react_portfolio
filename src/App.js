@@ -1,22 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from './components/Navbar';
 import AboutPage from './components/pages/AboutPage';
 import PortfolioPage from './components/pages/PortfolioPage';
 import Footer from './components/Footer';
 import "./assets/css/App.css";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import ContactPage from './components/pages/ContactPage';
+import ScrollToTop from './utils/ScrollToTop';
 
 
 function App() {
+
+  const [pages] = useState([
+    {name: 'About Me', path: '/'}, 
+    {name: 'Portfolio', path: '/portfolio'}, 
+    {name: 'Resume', path: '/resume'}, 
+    {name: 'Contact Me', path: '/contact-page'}
+  ]) 
+
+  const [activePage, setActivePage] = useState(pages[0]);
+  console.log('ACTIVE PAGE');
+  console.log(activePage);
   return (
     <>
     <Router>
-    <Navbar />
+    <ScrollToTop />
+    <Navbar activePage={activePage} setActivePage={setActivePage} pages={pages} />
     <video id='hero-video' src={require ("./assets/images/video-1.mp4").default} autoPlay loop muted></video>
 
     <Switch>
       <Route path ='/' exact component={AboutPage} />
       <Route path ='/portfolio' component={PortfolioPage} />
+      <Route path ='/contact-page' component={ContactPage} />
     </Switch>
     <Footer />
     </Router>
@@ -50,5 +65,5 @@ export default App;
 
 //useState on navbar active tab
 //finish Card components 
-//make a button component 
+
 

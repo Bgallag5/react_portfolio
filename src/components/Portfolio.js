@@ -46,3 +46,9 @@ export default function Portfolio() {
     )
 }
 
+
+
+//img screenshots of my portfloio projects 
+//links to my deployed projects
+// page spacing, show featured and the rest different sizes 
+//
