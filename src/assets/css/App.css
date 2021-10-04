@@ -1,0 +1,52 @@
+/* @import_normalize; */
+@import './Hero.css';
+@import './Navbar.css';
+@import './About.css';
+@import './Portfolio.css';
+@import './Footer.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+
+/* .about,
+.portfolio,
+.resume,
+.contact-me {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+} */
+
+/* .portfolio {
+  background-image: url('/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+} */
+/* 
+.resume {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.contact-me{
+  background-image: url('/images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+} */
+
