@@ -41,6 +41,4 @@ export default function Footer() {
 }
 
 
-//footer els link to their sites 
-//contact el links to contact pages
 

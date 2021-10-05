@@ -12,15 +12,16 @@ import ScrollToTop from './utils/ScrollToTop';
 function App() {
 
   const [pages] = useState([
-    {name: 'About Me', path: '/'}, 
-    {name: 'Portfolio', path: '/portfolio'}, 
-    {name: 'Resume', path: '/resume'}, 
-    {name: 'Contact Me', path: '/contact-page'}
+    {name: 'About Me', path: '/', id: 1}, 
+    {name: 'Portfolio', path: '/portfolio', id: 2}, 
+    {name: 'Resume', path: '/resume', id: 3}, 
+    {name: 'Contact Me', path: '/contact-page', id: 4}
   ]) 
 
-  const [activePage, setActivePage] = useState(pages[0]);
+  const [activePage, setActivePage] = useState(pages[0].name);
   console.log('ACTIVE PAGE');
   console.log(activePage);
+
   return (
     <>
     <Router>
@@ -30,8 +31,8 @@ function App() {
 
     <Switch>
       <Route path ='/' exact component={AboutPage} />
-      <Route path ='/portfolio' component={PortfolioPage} />
-      <Route path ='/contact-page' component={ContactPage} />
+      <Route path ='/portfolio' exact component={PortfolioPage} />
+      <Route path ='/contact-page' exact component={ContactPage} />
     </Switch>
     <Footer />
     </Router>
@@ -66,4 +67,5 @@ export default App;
 //useState on navbar active tab
 //finish Card components 
 
+//////Notes//////
 

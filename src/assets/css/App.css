@@ -1,8 +1,8 @@
 /* @import_normalize; */
 @import './Hero.css';
-@import './Navbar.css';
 @import './Portfolio.css';
 @import './ContactForm.css';
+@import './Navbar.css';
 @import './Footer.css';
 
 * {

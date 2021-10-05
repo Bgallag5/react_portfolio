@@ -1,11 +1,15 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
 
   const {activePage, setActivePage, pages} = props;
 
   console.log(activePage);
+
+  function toggleActivePage(page) {
+    setActivePage(page)
+  }
 
   useEffect(() => {
     document.title = activePage;
@@ -19,19 +23,19 @@ export default function Navbar(props) {
           {/* <h3>Ben Gallagher</h3> */}
           <ul className="nav-menu">
             {pages.map((page) => (
-            <li className="nav-item ">
-            <Link 
-            to={page.path}
-            className={"nav-links" }
-            key={page.name}
-            onClick={setActivePage(page.name)}
+            <li 
+            className='nav-item'
+            key={page.id}
             >
-              {page.name}
-            </Link>
+            <NavLink 
+            to={page.path}
+            className={activePage === page.name ? "nav-links nav-links-active" : 'nav-links'}
+            onClick={() => toggleActivePage(page.name)}
+            >
+            {page.name}
+            </NavLink>
           </li>
             ))}
-
-            
           </ul>
         </div>
       </nav>

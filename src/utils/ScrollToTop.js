@@ -10,3 +10,7 @@ export default function ScrollToTop() {
   
     return null;
 }
+
+
+///helper function that loads each page at the top; was loading my contact ...
+//page at the bottom where I had clicked it in the footer
