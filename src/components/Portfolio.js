@@ -4,7 +4,7 @@ import PortfolioCard from './PortfolioCard'
 export default function Portfolio() {
     return (
     <div className = 'cards'>
-    <h1>Boom! Check Me out</h1>
+    <h1>Check Out My Projects...</h1>
     <div className="cards__container">
     <div className="cards__items">
         <ul className = 'cards-wrapper'>

@@ -1,10 +1,12 @@
 .cards {
     padding: 4rem;
-    background: whitesmoke;
+    /* background: whitesmoke; */
   }
   
   h1 {
     text-align: center;
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
   }
   
   /* .cards__container {

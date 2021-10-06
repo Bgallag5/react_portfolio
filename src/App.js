@@ -27,7 +27,7 @@ function App() {
     <Router>
     <ScrollToTop />
     <Navbar activePage={activePage} setActivePage={setActivePage} pages={pages} />
-    <video id='hero-video' src={require ("./assets/images/video-1.mp4").default} autoPlay loop muted></video>
+    <video id='hero-video' src={require ("./assets/images/video-2.mp4").default} autoPlay loop muted></video>
 
     <Switch>
       <Route path ='/' exact component={AboutPage} />
