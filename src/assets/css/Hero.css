@@ -34,14 +34,15 @@ video{
 
 .about-section p {
     color: whitesmoke;
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 10px rgb(247, 247, 247);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     padding: 20px;
 }
 
 #about-picture{
-    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    border-radius: 900px;
     height: 200px;
     width: 200px;
 }

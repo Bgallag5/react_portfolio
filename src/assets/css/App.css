@@ -4,6 +4,7 @@
 @import './ContactForm.css';
 @import './Navbar.css';
 @import './Footer.css';
+@import './Resume.css';
 
 * {
     box-sizing: border-box;

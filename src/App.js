@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import Navbar from './components/Navbar';
 import AboutPage from './components/pages/AboutPage';
 import PortfolioPage from './components/pages/PortfolioPage';
@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import "./assets/css/App.css";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import ContactPage from './components/pages/ContactPage';
+import ResumePage from './components/Resume';
 import ScrollToTop from './utils/ScrollToTop';
 
 
@@ -22,17 +23,39 @@ function App() {
   console.log('ACTIVE PAGE');
   console.log(activePage);
 
+const videoRef = useRef();
+const setPlayBackSpeed = () => {
+  videoRef.current.playbackRate = .65;
+}
+
+
+
   return (
     <>
     <Router>
     <ScrollToTop />
-    <Navbar activePage={activePage} setActivePage={setActivePage} pages={pages} />
-    <video id='hero-video' src={require ("./assets/images/video-2.mp4").default} autoPlay loop muted></video>
+    <Navbar 
+    activePage={activePage} 
+    setActivePage={setActivePage} 
+    pages={pages} 
+    />
+    <video 
+    id='hero-video' 
+    src={require ("./assets/images/video-2.mp4").default} 
+    ref={videoRef} 
+    onCanPlay={() => setPlayBackSpeed()} 
+    autoPlay 
+    loop 
+    muted
+    >
+
+    </video>
 
     <Switch>
       <Route path ='/' exact component={AboutPage} />
       <Route path ='/portfolio' exact component={PortfolioPage} />
       <Route path ='/contact-page' exact component={ContactPage} />
+      <Route path ='/resume' exact component={ResumePage} />
     </Switch>
     <Footer />
     </Router>
