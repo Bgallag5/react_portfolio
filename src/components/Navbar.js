@@ -14,13 +14,13 @@ export default function Navbar(props) {
   useEffect(() => {
     document.title = activePage;
   }, [activePage])
-
+ 
 
   return (
     <>
       <nav className="navbar">
+          <h3 >Ben Gallagher</h3>
         <div className="navbar-container">
-          {/* <h3>Ben Gallagher</h3> */}
           <ul className="nav-menu">
             {pages.map((page) => (
             <li 

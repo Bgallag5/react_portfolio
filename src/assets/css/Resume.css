@@ -25,10 +25,38 @@ display: flex;
     width: 50%;
 }
 
+.proficiencies h2 {
+    margin-left: 20px;
+}
+
 .resume-pdf{
     padding: 20px;
     border: solid red 4px;
     height: 50%;
     width: 30%;
     margin: 20px;
+}
+
+.skills-container{
+    display: flex;
+    margin: 20px;
+}
+
+.skills-list{
+    width: 30%;
+}
+
+.skills-list h3 {
+    font-size: 24px;
+    top: 0;
+}
+
+.skills-list ul{
+
+}
+
+
+.skills-list li{
+    font-size: 20px;
+    margin-left: 0;
 }

@@ -22,6 +22,14 @@ body {
     /* max-width: 1500px; */
   }
   
+  .navbar h3 {
+    position: absolute;
+    left: 5%;
+    color: #fff;
+  }
+
+
+  
   /* .fa-typo3 {
     margin-left: 0.5rem;
     font-size: 1.8rem;

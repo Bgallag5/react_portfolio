@@ -25,7 +25,7 @@ function App() {
 
 const videoRef = useRef();
 const setPlayBackSpeed = () => {
-  videoRef.current.playbackRate = .65;
+  videoRef.current.playbackRate = .55;
 }
 
 
@@ -48,7 +48,6 @@ const setPlayBackSpeed = () => {
     loop 
     muted
     >
-
     </video>
 
     <Switch>

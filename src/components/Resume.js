@@ -1,14 +1,47 @@
-import React from 'react'
+import React from 'react';
+import resume from '../assets/resume.pdf';
 
 export default function Resume() {
     return (
         <div className='resume-page-container'>
             <div className="resume-info-container">
                 <div className='proficiencies'>
-                    <p>hello</p>
+                    <h2>Proficiencies</h2>
+                    <div className='skills-container'>
+                    <span className='skills-list'>
+                    <h3>Front End</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>Handlebars</li>
+                            <li>XML</li>
+                            <li>jQuery</li>
+                            <li>cdnjs</li>
+                        </ul>
+                    </span>
+                    <span className='skills-list'>
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>MySQL</li>
+                            <li>API's</li>
+                        </ul>
+                    </span>
+                    <span className='skills-list'>
+                        <h3>Foundation</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                            <li>OOP</li>
+                            <li>JSON</li>
+                        </ul>
+                    </span>
+                    </div>
                 </div>
             <div className='resume-pdf'>
-                    <p>resume.pdf</p>
+                    <a href={resume} target='_blank' rel='noreferrer'><p>resume.pdf</p></a>
             </div>
             </div>
         </div>
