@@ -5,7 +5,7 @@ export default function Resume() {
     return (
         <div className='resume-page-container'>
             <div className="resume-info-container">
-                <div className='proficiencies'>
+                <div className='resume-page-box proficiencies'>
                     <h2>Proficiencies</h2>
                     <div className='skills-container'>
                     <span className='skills-list'>
@@ -40,7 +40,7 @@ export default function Resume() {
                     </span>
                     </div>
                 </div>
-            <div className='resume-pdf'>
+            <div className='resume-page-box resume-pdf'>
                     <a href={resume} target='_blank' rel='noreferrer'><p>resume.pdf</p></a>
             </div>
             </div>

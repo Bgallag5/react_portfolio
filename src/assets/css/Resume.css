@@ -2,25 +2,25 @@
 height: 100vh;
 background: white;
 display: flex;
-/* position: relative; */
 }
 
 .resume-info-container{
-    /* top: 40%; */
-    /* left: 50%; */
     margin: -3% 0 0 0 ;
     display: flex;
     width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
+}
+
+.resume-page-box{
+    box-shadow: 3px 3px 0px blue ;
 }
 
 .proficiencies{
     margin: 20px;
     padding: 20px;
-    border: solid red 4px;
+    border: solid rgba(110, 110, 233, 0.952) 2px;
     height: 50%;
     width: 50%;
 }
@@ -31,7 +31,7 @@ display: flex;
 
 .resume-pdf{
     padding: 20px;
-    border: solid red 4px;
+    border: solid rgba(110, 110, 233, 0.952) 2px;
     height: 50%;
     width: 30%;
     margin: 20px;
