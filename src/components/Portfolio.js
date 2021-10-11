@@ -12,7 +12,7 @@ export default function Portfolio() {
             src={require ("../assets/images/moviebox.png").default}
             label="Movie Box"
             text="Movie Box is a full CRUD movie database application that allows users to: login, sort, search, and save the movies in our databse. Users can also read each other's reviews and leave their own. Built with: JavaScript, Node.js, Express.js, MySQL2, CSS, Handlebars, dotenv, bcrypt, lodash, and Bootstrap. "
-            href='https://github.com/Bgallag5/CookingwithReact'
+            href='https://fierce-plateau-48530.herokuapp.com/movies/login'
             />
             <PortfolioCard 
             src={require ("../assets/images/cooking.png").default}
@@ -24,19 +24,19 @@ export default function Portfolio() {
             src={require ("../assets/images/findFresh.png").default}
             label="Find Fresh"
             text="FreshFind is an app that allows users to search for local farmers markets and then pair the fresh ingredients they buy with healthy recipes. It was built with the Spoontastic API, USDA Farmers Market API, and Google Maps."
-            href='https://github.com/Bgallag5/CookingwithReact'
+            href='https://bgallag5.github.io/Find-nFresh/'
             />
             <PortfolioCard 
             src={require ("../assets/images/weatherapp.png").default}
             label="Weather Forecast App"
             text="An API weather app that presents the current and 5 day forcast for whatever city you search for, or select from your search history. Built with Javascript and Bootstrap. "
-            href='https://github.com/Bgallag5/CookingwithReact'
+            href='https://bgallag5.github.io/WeatherForecast/'
             />
             <PortfolioCard 
             src={require ("../assets/images/piggame.png").default}
             label="Pig Game"
             text="A simple front-end DOM, two-player dice game made with JavaSript, HTML, and CSS."
-            href='https://github.com/Bgallag5/CookingwithReact'
+            href='https://github.com/Bgallag5/Pig_Game'
             />
         </ul>
     </div>
