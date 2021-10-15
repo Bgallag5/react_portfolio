@@ -1,6 +1,7 @@
 # React Portfolio 
 
-<img width="1437" alt="Screen Shot 2021-09-05 at 11 08 25 PM" src="https://user-images.githubusercontent.com/82895658/132155472-02996f89-9828-4610-bc87-72145b4dd558.png">
+<img width="1439" alt="Screen Shot 2021-10-15 at 8 16 01 AM" src="https://user-images.githubusercontent.com/82895658/137485616-a374c974-aa22-4d00-b861-bfce369f05f2.png">
+
 
 ## Available Scripts
 
