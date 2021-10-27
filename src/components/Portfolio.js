@@ -38,6 +38,12 @@ export default function Portfolio() {
             text="A simple front-end DOM, two-player dice game made with JavaSript, HTML, and CSS."
             href='https://github.com/Bgallag5/Pig_Game'
             />
+            <PortfolioCard 
+            src={require ("../assets/images/pocket-trader.png").default}
+            label="Pocket Trader"
+            text="A full MERN stack + GraphQL application "
+            href='https://pocket-traders.herokuapp.com/'
+            />
         </ul>
     </div>
     </div>
