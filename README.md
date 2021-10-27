@@ -2,6 +2,8 @@
 
 <img width="1439" alt="Screen Shot 2021-10-15 at 8 16 01 AM" src="https://user-images.githubusercontent.com/82895658/137485616-a374c974-aa22-4d00-b861-bfce369f05f2.png">
 
+## Deployed Application
+https://morning-badlands-17413.herokuapp.com/   
 
 ## Available Scripts
 
