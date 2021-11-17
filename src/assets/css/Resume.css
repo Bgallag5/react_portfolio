@@ -1,6 +1,6 @@
 .resume-page-container{
 height: 100vh;
-background: white;
+/* background: white; */
 display: flex;
 }
 
@@ -14,6 +14,7 @@ display: flex;
 }
 
 .resume-page-box{
+    background: white;
     box-shadow: 3px 3px 0px blue ;
 }
 
@@ -49,6 +50,9 @@ display: flex;
 .skills-list h3 {
     font-size: 24px;
     top: 0;
+    text-decoration: underline 1px;
+    padding-bottom: 5px;
+    text-underline-offset: 3px;
 }
 
 .skills-list ul{

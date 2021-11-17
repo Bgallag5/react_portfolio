@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
 .cards {
     padding: 4rem;
     /* background: whitesmoke; */
@@ -7,23 +9,10 @@
     text-align: center;
     color: whitesmoke;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 0px 0px 10px rgb(255, 252, 252);
+    text-shadow: 0px 0px 10px rgb(48, 48, 48);
     font-size: 30px;
   }
-  
-  /* .cards__container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 90%;
-    margin: 0 auto;
-  } */
-  
-  .cards__items {
-    display: flex;
-    padding: 20px;
-}
+
 
 .cards-wrapper {
   margin: 0 auto;

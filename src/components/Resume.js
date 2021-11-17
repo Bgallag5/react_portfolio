@@ -14,10 +14,9 @@ export default function Resume() {
                             <li>React</li>
                             <li>CSS</li>
                             <li>HTML</li>
-                            <li>Handlebars</li>
-                            <li>XML</li>
                             <li>jQuery</li>
-                            <li>cdnjs</li>
+                            <li>Bulma/Bootsrap</li>
+                            <li>Handlebars</li>
                         </ul>
                     </span>
                     <span className='skills-list'>
@@ -25,7 +24,7 @@ export default function Resume() {
                         <ul>
                             <li>Node.js</li>
                             <li>Express.js</li>
-                            <li>MySQL</li>
+                            <li>MongoDB/mongoose</li>
                             <li>API's</li>
                         </ul>
                     </span>
@@ -34,7 +33,6 @@ export default function Resume() {
                         <ul>
                             <li>JavaScript</li>
                             <li>Git</li>
-                            <li>OOP</li>
                             <li>JSON</li>
                         </ul>
                     </span>

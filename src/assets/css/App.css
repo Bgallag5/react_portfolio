@@ -12,6 +12,11 @@
     font-family: 'PT Sans', sans-serif;
   }
 
+  body{
+    background-image: url("/src/assets/images/img-3.jpeg");
+  }
+
+
 
 /* .about,
 .portfolio,
