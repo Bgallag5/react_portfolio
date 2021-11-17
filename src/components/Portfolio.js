@@ -11,7 +11,7 @@ export default function Portfolio() {
             <PortfolioCard 
             src={require ("../assets/images/moviebox.png").default}
             label="Movie Box"
-            text="Movie Box is a full CRUD movie database application that allows users to: login, sort, search, and save the movies in our databse. Users can also read each other's reviews and leave their own. Built with: JavaScript, Node.js, Express.js, MySQL2, CSS, Handlebars, dotenv, bcrypt, lodash, and Bootstrap. "
+            text="Movie Box is a full CRUD movie database application that allows users to: login, sort, search, and save the movies in our database. Users can also read each other's reviews and leave their own. Built with: JavaScript, Node.js, Express.js, MySQL2, CSS, Handlebars, dotenv, bcrypt, lodash, and Bootstrap. "
             href='https://fierce-plateau-48530.herokuapp.com/movies/login'
             />
             <PortfolioCard 

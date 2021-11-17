@@ -10,7 +10,7 @@ export default function Hero() {
 
             <div className='about-section'>
             <img src = {image} alt = 'Ben' id="about-picture"/>
-            <p className="hero-text-top">Hello! My name is Ben and I like to code.</p>
+            <p className="hero-text-top">Hello!! My name is Ben and I like to code.</p>
             </div>
         
         </div>
