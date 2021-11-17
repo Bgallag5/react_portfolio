@@ -1,6 +1,7 @@
 import React from "react";
 import PortfolioCard from "./PortfolioCard";
 
+
 export default function Portfolio() {
   return (
     <div className="cards">
@@ -26,7 +27,7 @@ export default function Portfolio() {
             href="https://pocket-traders.herokuapp.com/"
           />
         </div>
-        <div className="contianer columns is-centered m-4">
+        <div className="contianer columns is-centered mx-5">
           <PortfolioCard
             src={require("../assets/images/cooking.png").default}
             label="Cooking with React"
@@ -36,7 +37,7 @@ export default function Portfolio() {
           <PortfolioCard
             src={require("../assets/images/findFresh.png").default}
             label="Find Fresh"
-            text="FreshFind is an app that allows users to search for local farmers markets and then pair the fresh ingredients they buy with healthy recipes. It was built with the Spoontastic API, USDA Farmers Market API, and Google Maps."
+            text="FreshFind is an app that allows users to search for local farmers markets. It was built with the Spoontastic API, USDA Farmers Market API, and Google Maps. "
             href="https://bgallag5.github.io/Find-nFresh/"
           />
           <PortfolioCard
@@ -46,7 +47,7 @@ export default function Portfolio() {
             href="https://bgallag5.github.io/WeatherForecast/"
           />
         </div>
-        <div className="contianer columns is-centered m-4">
+        <div className="contianer columns is-centered mx-5">
           <PortfolioCard
             src={require("../assets/images/piggame.png").default}
             label="Pig Game"

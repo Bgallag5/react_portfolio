@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
 
             <div className='footer-link-items'>
-              <a href='https://www.youtube.com/channel/UC0vquGJDrsauIpNZMAr-ZYA' target='_blank' rel='noreferrer'><h2>Youtube</h2><i className="fab fa-youtube"></i></a>
+              <a href='https://www.youtube.com/channel/UC0vquGJDrsauIpNZMAr-ZYA/videos' target='_blank' rel='noreferrer'><h2>Youtube</h2><i className="fab fa-youtube"></i></a>
             </div>
 
             <div className='footer-link-items'>
