@@ -6,11 +6,12 @@ export default function Portfolio() {
   return (
     <div className="cards">
       <h1>Check Out My Projects...</h1>
-      <div className="section container is-small">
-        <div className="container columns is-centered card">
+      <div className="section container m-1 is-centered is-small">
+
+        <div className="container py-5 columns is-centered card">
           <h2
             className="subtitle m-4"
-            style={{ position: "absolute", left: "10px" }}
+            style={{ position: "absolute", left: "10px", top: '0' }}
           >
             Featured
           </h2>
@@ -27,7 +28,8 @@ export default function Portfolio() {
             href="https://pocket-traders.herokuapp.com/"
           />
         </div>
-        <div className="contianer columns is-centered mx-5">
+
+        <div className="section is-flex-wrap-wrap columns is-centered mx-5">
           <PortfolioCard
             src={require("../assets/images/cooking.png").default}
             label="Cooking with React"
@@ -46,8 +48,9 @@ export default function Portfolio() {
             text="An API weather app that presents the current and 5 day forcast for whatever city you search for, or select from your search history. Built with Javascript and Bootstrap. "
             href="https://bgallag5.github.io/WeatherForecast/"
           />
-        </div>
-        <div className="contianer columns is-centered mx-5">
+        {/* </div> */}
+
+        {/* <div className="contianer columns is-centered mx-5"> */}
           <PortfolioCard
             src={require("../assets/images/piggame.png").default}
             label="Pig Game"

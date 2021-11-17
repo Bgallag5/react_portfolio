@@ -5,19 +5,22 @@ export default function PortfolioCard(props) {
   return (
     <div className="column is-6">
       <li className="cards__item">
-        <a className="cards__item__link" href={props.href} target="__blank">
+        <div className="cards__item__link">
+          <a href={props.href} target="__blank" className='cards__item__link'>
           <figure className="cards__item__pic-wrap" data-category={props.label}>
             <img src={props.src} alt="Project 1" className="cards__item__img" />
           </figure>
+          </a>
           <div className="cards__item__info">
             <Collapsible
               trigger="Details &#9660;"
               className="text-collapse"
+              transitionTime='200'
             >
               <h5 className="cards__item__text p-3">{props.text} </h5>
             </Collapsible>
           </div>
-        </a>
+        </div>
       </li>
     </div>
   );
