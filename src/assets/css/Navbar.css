@@ -22,10 +22,11 @@ body {
     /* max-width: 1500px; */
   }
   
-  .navbar h3 {
+  .navbar h2 {
     position: absolute;
     left: 5%;
     color: #fff;
+    font-size: 23px;
   }
 
 

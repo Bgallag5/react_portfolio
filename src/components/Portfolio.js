@@ -4,7 +4,7 @@ import PortfolioCard from "./PortfolioCard";
 
 export default function Portfolio() {
   return (
-    <div className="cards">
+    <div className="cards container">
       <h1>Check Out My Projects...</h1>
       <div className="section container m-1 is-centered is-small">
 
@@ -29,7 +29,7 @@ export default function Portfolio() {
           />
         </div>
 
-        <div className="section is-flex-wrap-wrap columns is-centered mx-5">
+        <div className="section is-flex-wrap-wrap columns is-centered">
           <PortfolioCard
             src={require("../assets/images/cooking.png").default}
             label="Cooking with React"

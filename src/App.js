@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import AboutPage from "./components/pages/AboutPage";
 import PortfolioPage from "./components/pages/PortfolioPage";
@@ -17,7 +17,7 @@ function App() {
     // { name: "Contact Me", path: "/contact-page", id: 4 },
   ]);
 
-  const [activePage, setActivePage] = useState(pages[0].name);
+  const [activePage, setActivePage] = useState("About Me");
   console.log("ACTIVE PAGE");
   console.log(activePage);
 
@@ -25,6 +25,7 @@ function App() {
   // const setPlayBackSpeed = () => {
   //   videoRef.current.playbackRate = 0.55;
   // };
+
 
   return (
     <>
@@ -47,7 +48,13 @@ function App() {
         {/* <img src={require("./assets/images/img-9.jpeg").default} /> */}
 
         <Switch>
-          <Route path="/" exact component={AboutPage} />
+          <Route
+            path="/"
+            exact
+            component={AboutPage}
+            activePage={activePage}
+            setActivePage={setActivePage}
+          />
           <Route path="/portfolio" exact component={PortfolioPage} />
           <Route path="/resume" exact component={ResumePage} />
           {/* <Route path="/contact-page" exact component={ContactPage} /> */}
@@ -59,4 +66,3 @@ function App() {
 }
 
 export default App;
-

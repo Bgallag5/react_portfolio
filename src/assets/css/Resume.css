@@ -19,15 +19,11 @@ display: flex;
 }
 
 .proficiencies{
-    margin: 20px;
+    /* margin: 20px; */
     padding: 20px;
     border: solid rgba(110, 110, 233, 0.952) 2px;
     height: 50%;
     width: 50%;
-}
-
-.proficiencies h2 {
-    margin-left: 20px;
 }
 
 .resume-pdf{
@@ -35,7 +31,7 @@ display: flex;
     border: solid rgba(110, 110, 233, 0.952) 2px;
     height: 50%;
     width: 30%;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .skills-container{
@@ -53,10 +49,6 @@ display: flex;
     text-decoration: underline 1px;
     padding-bottom: 5px;
     text-underline-offset: 3px;
-}
-
-.skills-list ul{
-
 }
 
 

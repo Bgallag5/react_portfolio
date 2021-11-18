@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link  } from "react-router-dom";
+
 
 export default function Navbar(props) {
 
@@ -13,13 +14,13 @@ export default function Navbar(props) {
 
   useEffect(() => {
     document.title = activePage;
-  }, [activePage])
+  })
  
 
   return (
     <>
       <nav className="navbar">
-          <h3 >Ben Gallagher</h3>
+          <h2>Ben Gallagher</h2>
         <div className="navbar-container">
           <ul className="nav-menu">
             {pages.map((page) => (

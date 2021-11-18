@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
 
             <div className='footer-link-items'>
-              <Link to='/contact-page' ><h2>Contact Me</h2><i className="far fa-envelope"></i><i className="fas fa-mobile-alt"></i></Link>
+              <Link to='/resume' ><h2>Contact Me</h2><i className="far fa-envelope"></i><i className="fas fa-mobile-alt"></i></Link>
             </div>
 
           </div>
