@@ -42,7 +42,7 @@ export default function Resume() {
         <div className="container m-5 resume-page-box resume-pdf">
           <p>
             Hi! My name is Benjamin Gallagher and I am a back end web developer
-            with a pasion for making things work. As a developer, I get the most
+            with a passion for making things work. As a developer, I get the most
             satisfaction from tackling unexpected or challenging problems that
             force me to expand my developer's toolkit. I've done most of my work
             using the MERN stack (MongoDB, Express, React, Node), but I have

@@ -25,7 +25,7 @@ export default function Portfolio() {
             label="Pocket Trader"
             text={"A full MERN stack + GraphQL application. Users can sign up to build their own team, and check out the leaderboards to see the best teams. Built with: MongoDB, Express, React, Node, and GraphQL"}
             href="https://pocket-trader.herokuapp.com/"
-            code="https://github.com/Bgallag5/PokeTrader"
+            code="https://github.com/Bgallag5/pocketTrader"
           />
         </div>
 
