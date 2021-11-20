@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AppContext } from '../App';
 
-export default function Hero(props) {
-    const {activePage, setActivePage } = props;
+export default function Hero() {
 
+    const [activePage, setActivePage] = useContext(AppContext);
+
+    // useEffect(() => {
+    //     setActivePage()
+    // }, [activePage])
 
     const image = require('../assets/images/AvatarMaker.svg').default;
+
 
 
     return (
@@ -16,8 +22,8 @@ export default function Hero(props) {
             <div className='container'>
             <p>Hello! My name is Ben and I like to code.</p>
             <ul className='mx-5 small-links'>
-            <li><Link to='/resume' className='small-link'>Contact Me or View my Resume<i style={{verticalAlign: 'middle', fontSize: '20px'}} class="fas fa-angle-double-right"></i></Link></li>
-            <li><Link to='/portfolio' className='small-link'>View my Projects<i style={{verticalAlign: 'middle', fontSize: '20px'}} class="fas fa-angle-double-right"></i></Link></li>
+            <li><Link to='/resume' onClick={() => setActivePage('Resume')}  className='small-link'>Contact Me or View my Resume<i style={{verticalAlign: 'middle', fontSize: '20px'}} className="fas fa-angle-double-right"></i></Link></li>
+            <li><Link to='/portfolio' onClick={() => setActivePage('Portfolio')} className='small-link'>View my Projects<i style={{verticalAlign: 'middle', fontSize: '20px'}} className="fas fa-angle-double-right"></i></Link></li>
             </ul>
             </div>
             </div>

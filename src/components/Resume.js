@@ -49,7 +49,7 @@ export default function Resume() {
             also built projects with GraphQL and MySQL.{" "}
           </p>
           <a href={resume} target="_blank" rel="noreferrer">
-            <p style={{marginTop: '10%', marginBottom: '1%'}}>resume.pdf <i class="fas fa-file" style={{fontSize: '20px'}}></i></p>
+            <p style={{marginTop: '10%', marginBottom: '1%'}}>resume.pdf <i className="fas fa-file" style={{fontSize: '20px'}}></i></p>
           </a>
           <ul>
               <li>703-258-9324</li>

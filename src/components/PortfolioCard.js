@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Collapsible from "react-collapsible";
+import { Link } from "react-router-dom";
 
 export default function PortfolioCard(props) {
   return (
@@ -18,6 +19,7 @@ export default function PortfolioCard(props) {
               transitionTime='200'
             >
               <h5 className="cards__item__text p-3">{props.text} </h5>
+              <a href= {props.code} target="__blank" >Code</a>
             </Collapsible>
           </div>
         </div>

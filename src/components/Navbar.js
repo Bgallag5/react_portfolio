@@ -1,26 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { NavLink, Link  } from "react-router-dom";
+import { AppContext } from "../App";
 
 
 export default function Navbar(props) {
+  const { pages } = props;
 
-  const {activePage, setActivePage, pages} = props;
+  const [activePage, setActivePage] = useContext(AppContext);
 
   console.log(activePage);
-
-  function toggleActivePage(page) {
-    setActivePage(page)
-  }
-
-  useEffect(() => {
-    document.title = activePage;
-  })
- 
+  console.log(pages);
 
   return (
     <>
       <nav className="navbar">
-          <h2>Ben Gallagher</h2>
+          <h2><Link to='/' style={{color: 'whitesmoke'}}>Ben Gallagher</Link></h2>
         <div className="navbar-container">
           <ul className="nav-menu">
             {pages.map((page) => (
@@ -31,7 +25,7 @@ export default function Navbar(props) {
             <NavLink 
             to={page.path}
             className={activePage === page.name ? "nav-links nav-links-active" : 'nav-links'}
-            onClick={() => toggleActivePage(page.name)}
+            onClick={() => setActivePage(page.name)}
             >
             {page.name}
             </NavLink>

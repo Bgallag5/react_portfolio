@@ -9,6 +9,8 @@ import ResumePage from "./components/Resume";
 import ScrollToTop from "./utils/ScrollToTop";
 // import ContactPage from "./components/pages/ContactPage";
 
+export const AppContext = React.createContext();
+
 function App() {
   const [pages] = useState([
     { name: "About Me", path: "/", id: 1 },
@@ -21,31 +23,25 @@ function App() {
   console.log("ACTIVE PAGE");
   console.log(activePage);
 
-  // const videoRef = useRef();
-  // const setPlayBackSpeed = () => {
-  //   videoRef.current.playbackRate = 0.55;
-  // };
+  useEffect(() => {
+    document.title = activePage;
+    // document.location = activePage
+  }, [activePage]);
+
+  // const globalVars = [{
+  //   activePage,
+  //   setActivePage,
+  //   pages
+  // }]
 
 
   return (
-    <>
+    <AppContext.Provider value={[activePage, setActivePage]}>
       <Router>
         <ScrollToTop />
         <Navbar
-          activePage={activePage}
-          setActivePage={setActivePage}
           pages={pages}
         />
-        {/* <video
-          id="hero-video"
-          src={require("./assets/images/video-2.mp4").default}
-          ref={videoRef}
-          onCanPlay={() => setPlayBackSpeed()}
-          autoPlay
-          loop
-          muted
-        ></video> */}
-        {/* <img src={require("./assets/images/img-9.jpeg").default} /> */}
 
         <Switch>
           <Route
@@ -61,8 +57,31 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </>
+    </AppContext.Provider>
   );
 }
 
 export default App;
+
+
+
+
+// const videoRef = useRef();
+// const setPlayBackSpeed = () => {
+//   videoRef.current.playbackRate = 0.55;
+// };
+
+// {
+//   /* <video
+//           id="hero-video"
+//           src={require("./assets/images/video-2.mp4").default}
+//           ref={videoRef}
+//           onCanPlay={() => setPlayBackSpeed()}
+//           autoPlay
+//           loop
+//           muted
+//         ></video> */
+// }
+// {
+//   /* <img src={require("./assets/images/img-9.jpeg").default} /> */
+// }
