@@ -30,13 +30,13 @@ export default function Portfolio() {
         </div>
 
         <div className="section is-flex-wrap-wrap columns is-centered">
-          <PortfolioCard
-            src={require("../assets/images/cooking.png").default}
-            label="Cooking with React"
-            text="A simple recipe list app made with React. "
-            href=""
-            code='https://github.com/Bgallag5/CookingwithReact'
-          />
+            <PortfolioCard
+              src={require("../assets/images/weather-app.png").default}
+              label="Weather Forecast App"
+              text="An API weather app that presents the current and 5 day forcast for whatever city you search for, or select from your search history. Built with React, JavaScript, and Bulma. "
+              href="https://sheltered-ravine-61938.herokuapp.com/"
+              code='https://github.com/Bgallag5/react-weather-app'
+            />
           <PortfolioCard
             src={require("../assets/images/findFresh.png").default}
             label="Find Fresh"
@@ -45,14 +45,20 @@ export default function Portfolio() {
             code="https://github.com/Bgallag5/Find-nFresh"
           />
           <PortfolioCard
-            src={require("../assets/images/weatherapp.png").default}
-            label="Weather Forecast App"
-            text="An API weather app that presents the current and 5 day forcast for whatever city you search for, or select from your search history. Built with Javascript and Bootstrap. "
-            href="https://bgallag5.github.io/WeatherForecast/"
+            src={require("../assets/images/cooking.png").default}
+            label="Cooking with React"
+            text="A simple recipe list app made with React. "
+            href=""
+            code='https://github.com/Bgallag5/CookingwithReact'
+          />
+          <PortfolioCard
+            src={require("../assets/images/piggame.png").default}
+            label="Pig Game"
+            text="A simple front-end DOM, two-player dice game made with JavaSript, HTML, and CSS."
+            href="https://github.com/Bgallag5/Pig_Game"
             code=''
           />
-
-          <PortfolioCard
+          {/* <PortfolioCard
             src={require("../assets/images/piggame.png").default}
             label="Pig Game"
             text="A simple front-end DOM, two-player dice game made with JavaSript, HTML, and CSS."
@@ -65,14 +71,7 @@ export default function Portfolio() {
             text="A simple front-end DOM, two-player dice game made with JavaSript, HTML, and CSS."
             href="https://github.com/Bgallag5/Pig_Game"
             code=''
-          />
-          <PortfolioCard
-            src={require("../assets/images/piggame.png").default}
-            label="Pig Game"
-            text="A simple front-end DOM, two-player dice game made with JavaSript, HTML, and CSS."
-            href="https://github.com/Bgallag5/Pig_Game"
-            code=''
-          />
+          /> */}
         </div>
       </div>
     </div>

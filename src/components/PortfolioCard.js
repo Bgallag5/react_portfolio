@@ -19,7 +19,7 @@ export default function PortfolioCard(props) {
               transitionTime='200'
             >
               <h5 className="cards__item__text p-3">{props.text} </h5>
-              <a href= {props.code} target="__blank" >Code</a>
+              <a href= {props.code} target="__blank" style={{color: 'black'}} ><i style={{fontSize: 'small'}} class="fas fa-link"></i>Code</a>
             </Collapsible>
           </div>
         </div>
