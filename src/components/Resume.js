@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../assets/materials/BG-resume-Nov2021.pdf";
+import resume from "../assets/materials/BG_resume_Jan_2022.pdf";
 
 export default function Resume() {
   return (
