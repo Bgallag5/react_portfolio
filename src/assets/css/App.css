@@ -1,17 +1,33 @@
 /* @import_normalize; */
-@import './Hero.css';
-@import './Portfolio.css';
-@import './ContactForm.css';
-@import './Navbar.css';
-@import './Footer.css';
-@import './Resume.css';
+@import "./Hero.css";
+@import "./Portfolio.css";
+@import "./ContactForm.css";
+@import "./Navbar.css";
+@import "./Footer.css";
+@import "./Resume.css";
+@import "./Project.css";
+
+:root{
+  --color-one: black;
+  --color-two: rgba(110, 110, 233, 0.952);
+  --color-three: rgb(28, 27, 27);
+
+  --color-four: #E4D9FF;
+  --color-five: #273469;
+  --color-six: #1E2749;
+  --color-seven: #FAFAFF;
+  --color-eight: #30343F;
+  --color-nine: #f8e32a;
+
+}
 
 * {
-    box-sizing: border-box;
-    margin: 0 auto;
-    font-family: 'PT Sans', sans-serif;
-  }
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+}
 
-  body{
-    background-image: url("/src/assets/images/img-3.jpeg");
-  }
+body {
+  /* background: url("/src/assets/images/img-3.jpeg"); */
+  background: var(--color-eight);
+}

@@ -26,7 +26,7 @@ video{
 }
 
 .about-section p {
-    color: whitesmoke;
+    color: var(--color-seven);
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
@@ -38,14 +38,19 @@ video{
     border-radius: 50%;
     padding: 10px;
     height: 25vh;
+    background: var(--color-seven);
 }
 
 .small-links li{
 padding-bottom: 5px;
+color: var(--color-four);
+cursor: pointer;
+width: fit-content;
 }
 
 .small-link:hover{
 padding-bottom: 5px;
-color: whitesmoke;
+color: var(--color-seven);
+font-size: large;
 }
 

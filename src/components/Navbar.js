@@ -1,35 +1,36 @@
 import React, { useEffect, useContext } from "react";
-import { NavLink, Link  } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { AppContext } from "../App";
 
+export default function Navbar() {
 
-export default function Navbar(props) {
-  const { pages } = props;
+  const { activePage, setActivePage, pages } = useContext(AppContext);
 
-  const [activePage, setActivePage] = useContext(AppContext);
-
-  console.log(activePage);
-  console.log(pages);
 
   return (
     <>
       <nav className="navbar">
-          <h2><Link to='/' style={{color: 'whitesmoke'}}>Ben Gallagher</Link></h2>
+        <h2>
+          <Link to="/" style={{ color: "whitesmoke" }}>
+            Ben Gallagher
+          </Link>
+        </h2>
         <div className="navbar-container">
           <ul className="nav-menu">
             {pages.map((page) => (
-            <li 
-            className='nav-item'
-            key={page.id}
-            >
-            <NavLink 
-            to={page.path}
-            className={activePage === page.name ? "nav-links nav-links-active" : 'nav-links'}
-            onClick={() => setActivePage(page.name)}
-            >
-            {page.name}
-            </NavLink>
-          </li>
+              <li className="nav-item" key={page.id}>
+                <NavLink
+                  to={page.path}
+                  className={
+                    activePage === page.name
+                      ? "nav-links nav-links-active"
+                      : "nav-links"
+                  }
+                  onClick={() => setActivePage(page.name)}
+                >
+                  {page.name}
+                </NavLink>
+              </li>
             ))}
           </ul>
         </div>
@@ -38,18 +39,13 @@ export default function Navbar(props) {
   );
 }
 
-
-
-
-
-
 // {/* <>
 // <nav className="navbar">
 //   <div className="navbar-container">
 //     {/* <h3>Ben Gallagher</h3> */}
 //     <ul className="nav-menu">
 //       <li className="nav-item ">
-//         <Link to="/" 
+//         <Link to="/"
 //         className="nav-links"
 //         // onClick={setActivePage(pages[0])}
 //         >

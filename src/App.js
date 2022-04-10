@@ -13,47 +13,45 @@ export const AppContext = React.createContext();
 
 function App() {
   const [pages] = useState([
-    { name: "About Me", path: "/", id: 1 },
+    // { name: "About Me", path: "/", id: 1 },
     { name: "Portfolio", path: "/portfolio", id: 2 },
-    { name: "Resume", path: "/resume", id: 3 },
-    // { name: "Contact Me", path: "/contact-page", id: 4 },
+    { name: "Resume", path: "/resume", id: 3 }
   ]);
+  const [activePage, setActivePage] = useState("");
 
-  const [activePage, setActivePage] = useState("About Me");
-  console.log("ACTIVE PAGE");
-  console.log(activePage);
+  //reload last active tab
+  useEffect(() => {
+    const lastTab = JSON.parse(localStorage.getItem('last-tab'));
+    lastTab ? setActivePage(lastTab) : setActivePage('Portfolio')
+  }, []);
 
+  //monitor page changes
   useEffect(() => {
     document.title = activePage;
-    // document.location = activePage
+    localStorage.setItem('last-tab', JSON.stringify(activePage))
   }, [activePage]);
 
-  // const globalVars = [{
-  //   activePage,
-  //   setActivePage,
-  //   pages
-  // }]
+  const globalVars = {
+    activePage,
+    setActivePage,
+    pages
+  };
+
 
 
   return (
-    <AppContext.Provider value={[activePage, setActivePage]}>
+    <AppContext.Provider value={globalVars}>
       <Router>
         <ScrollToTop />
-        <Navbar
-          pages={pages}
-        />
-
+        <Navbar/>
         <Switch>
           <Route
             path="/"
             exact
             component={AboutPage}
-            activePage={activePage}
-            setActivePage={setActivePage}
           />
           <Route path="/portfolio" exact component={PortfolioPage} />
           <Route path="/resume" exact component={ResumePage} />
-          {/* <Route path="/contact-page" exact component={ContactPage} /> */}
         </Switch>
         <Footer />
       </Router>
@@ -64,24 +62,3 @@ function App() {
 export default App;
 
 
-
-
-// const videoRef = useRef();
-// const setPlayBackSpeed = () => {
-//   videoRef.current.playbackRate = 0.55;
-// };
-
-// {
-//   /* <video
-//           id="hero-video"
-//           src={require("./assets/images/video-2.mp4").default}
-//           ref={videoRef}
-//           onCanPlay={() => setPlayBackSpeed()}
-//           autoPlay
-//           loop
-//           muted
-//         ></video> */
-// }
-// {
-//   /* <img src={require("./assets/images/img-9.jpeg").default} /> */
-// }
