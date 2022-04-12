@@ -88,16 +88,15 @@
   width: fit-content;
 }
 
-.code__link,
-.code__link > a {
+.project_footer,
+.project_footer > a {
   position: relative;
   margin-top: 10%;
   margin-left: 0;
   color: var(--color-four);
 }
 
-.code__link:hover,
-.code__link > a:hover {
+.code__link:hover {
     font-size: large;
     transition: ease-in-out .3s;
 }

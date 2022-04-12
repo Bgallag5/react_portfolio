@@ -3,9 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { AppContext } from "../App";
 
 export default function Navbar() {
-
   const { activePage, setActivePage, pages } = useContext(AppContext);
-
 
   return (
     <>
@@ -38,48 +36,3 @@ export default function Navbar() {
     </>
   );
 }
-
-// {/* <>
-// <nav className="navbar">
-//   <div className="navbar-container">
-//     {/* <h3>Ben Gallagher</h3> */}
-//     <ul className="nav-menu">
-//       <li className="nav-item ">
-//         <Link to="/"
-//         className="nav-links"
-//         // onClick={setActivePage(pages[0])}
-//         >
-//           About Me
-//         </Link>
-//       </li>
-//       <li className="nav-item">
-//         <Link
-//           to="/portfolio"
-//           className="nav-links"
-//           onClick={setActivePage()}
-//         >
-//           Portfolio
-//         </Link>
-//       </li>
-//       <li className="nav-item">
-//         <Link
-//           to="/resume"
-//           className="nav-links"
-//           // onClick={setActivePage(pages[3])}
-//         >
-//           Resume
-//         </Link>
-//       </li>
-//       <li className="nav-item">
-//         <Link
-//           to="/contact-page"
-//           className="nav-links"
-//           // onClick={setActivePage(pages[4])}
-//         >
-//           Contact Me
-//         </Link>
-//       </li>
-//     </ul>
-//   </div>
-// </nav>
-// </> */}

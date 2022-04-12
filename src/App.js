@@ -1,20 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import Navbar from "./components/Navbar";
-import AboutPage from "./components/pages/AboutPage";
 import PortfolioPage from "./components/pages/PortfolioPage";
 import Footer from "./components/Footer";
 import "./assets/css/App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ResumePage from "./components/Resume";
 import ScrollToTop from "./utils/ScrollToTop";
-// import ContactPage from "./components/pages/ContactPage";
 
 export const AppContext = React.createContext();
 
 function App() {
   const [pages] = useState([
-    // { name: "About Me", path: "/", id: 1 },
-    { name: "Portfolio", path: "/portfolio", id: 2 },
+    { name: "Portfolio", path: "/", id: 2 },
     { name: "Resume", path: "/resume", id: 3 }
   ]);
   const [activePage, setActivePage] = useState("");
@@ -37,20 +34,13 @@ function App() {
     pages
   };
 
-
-
   return (
     <AppContext.Provider value={globalVars}>
       <Router>
         <ScrollToTop />
         <Navbar/>
         <Switch>
-          <Route
-            path="/"
-            exact
-            component={AboutPage}
-          />
-          <Route path="/portfolio" exact component={PortfolioPage} />
+          <Route path="/" exact component={PortfolioPage} />
           <Route path="/resume" exact component={ResumePage} />
         </Switch>
         <Footer />

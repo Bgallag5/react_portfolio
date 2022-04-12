@@ -14,14 +14,14 @@ export default function Hero() {
     window.scrollTo({
       left: p1Coords.left + window.scrollX,
       //subtract nav height from scroll distance
-      top: p1Coords.top + window.scrollY - navBar.height,
+      top: p1Coords.top + window.scrollY - navBar.height - 20,
       behavior: "smooth",
     });
   };
 
+  //on mount, wait 1 sec then remove animation class names
   useEffect(() => {
     const scrollLink = document.querySelector(".view--projects");
-    // scrollLink.classList.add('animate__bounce');
     setTimeout(() => {
         scrollLink.classList.remove('animate__bounce')
     }, 1000)
