@@ -41,6 +41,27 @@ export default function PortfolioPage() {
   }, []);
 
   //Project Data
+  const Natours = {
+    title: "Natours",
+    imgSrc: "natours--img.png",
+    deployed: "https://bg-natours.herokuapp.com/",
+    code: "https://github.com/Bgallag5/Natours",
+    description:
+      "Natours is a fullstack MERN application designed for browsing and booking vacations! Natours users can create an account to browse our diverse vacation tour offers. ",
+    quip: "Life changing experiences, just clicks away.",
+    technologies: "React, MongoDB, Express, Node",
+  };
+  const Stocks = {
+    title: "Stock Alert",
+    imgSrc: "stock--img.png",
+    deployed: "https://bgstock-alert.herokuapp.com/",
+    code: "https://github.com/Bgallag5/Stock_Alert",
+    description:
+      `Stock alert my own recreation of the website https://stockalarm.io/. I build this project to practice recreating great looking websites as fast as possible in React. Compare it to the original to see how accurate my recreation is (with some upgrades included)`,
+    quip: "Trades EXACTLY when you need them",
+    className: "img--right",
+    technologies: "React, JavaScript, CSS, Google Fonts/Icons",
+  };
   const Pokemon = {
     title: "Pocket Trader",
     imgSrc: "pocket-trader.png",
@@ -49,30 +70,18 @@ export default function PortfolioPage() {
     description:
       "A full MERN stack + GraphQL application. Users can sign up to build their own team, and check out the leaderboards to see the best teams. Built with: MongoDB, Express, React, Node, and GraphQL",
     quip: "A Pokemon team building game",
-    className: "img--right",
     technologies: "React, JavaScript, GraphQL, Express, Node.js, Bulma, CSS",
   };
-  const FindFresh = {
-    title: "Find Fresh",
-    imgSrc: "findFresh.png",
-    deployed: "https://bgallag5.github.io/Find-nFresh/",
-    code: "https://github.com/Bgallag5/Find-nFresh",
+  const Bankist = {
+    title: "Bankist",
+    imgSrc: "bankist--img.png",
+    deployed: "https://bankist--app.herokuapp.com/",
+    code: "https://github.com/Bgallag5/Bankist",
     description:
-      "FreshFind is an app that allows users to search for local farmers markets. It was built with the Spoontastic API, USDA Farmers Market API, and Google Maps.",
-    quip: "Farm to table. From home.",
+      "Need a new bank? Well keep looking because this is only a webpage. Bankist is a front end landing page for a fake bank with a concentration on simplicity, readability, and style.",
+    quip: "When banking meets minimalism.",
     className: "img--right",
-    technologies: "React, JavaScript, CSS, FindFresh API",
-  };
-
-  const MovieBox = {
-    title: "Movie Box",
-    imgSrc: "moviebox.png",
-    deployed: "https://fierce-plateau-48530.herokuapp.com/movies/login",
-    code: "https://github.com/Bgallag5/Movie_Box",
-    description: `Movie Box is a full CRUD movie database application.`,
-    quip: "Just like Netflix, but none of the movie are real!",
-    technologies:
-      "JavaScript, Node, Express, MySQL2, CSS, Handlebars, bcrypt, and Bootstrap",
+    technologies: "React, JavaScript, CSS",
   };
   const Forkify = {
     title: "Forkify",
@@ -84,37 +93,27 @@ export default function PortfolioPage() {
     quip: "Find it. Make it.",
     technologies: "React, JavaScript, CSS, Material UI, Forkify API",
   };
-  const Stocks = {
-    title: "Stock Alert",
-    imgSrc: "stock--img.png",
-    deployed: "https://bgstock-alert.herokuapp.com/",
-    code: "https://github.com/Bgallag5/Stock_Alert",
-    description:
-      "Stock Alert is a front end landing page for a stock alert app. ",
-    quip: "Trades EXACTLY when you need them",
-    technologies: "React, JavaScript, CSS, Google Fonts/Icons",
-  };
-  const Bankist = {
-    title: "Bankist",
-    imgSrc: "bankist--img.png",
-    deployed: "https://bankist--app.herokuapp.com/",
-    code: "https://github.com/Bgallag5/Bankist",
-    description:
-      "Need a new bank? Well keep looking because this is only a webpage. Bankist is a front end landing page for a fake bank with a concentration on simplicity, readablity, and style.",
-    quip: "When banking meets minimalism.",
+  const MovieBox = {
+    title: "Movie Box",
+    imgSrc: "moviebox.png",
+    deployed: "https://fierce-plateau-48530.herokuapp.com/movies/login",
+    code: "https://github.com/Bgallag5/Movie_Box",
+    description: `Movie Box is a full CRUD movie database application. The API is built with MySQL, Express, and Node. Users can create a profile, login, search movies, and leave reviews.`,
+    quip: "Just like Netflix, but none of the movie are real!",
     className: "img--right",
-    technologies: "React, JavaScript, CSS",
+    technologies:
+      "JavaScript, Node, Express, MySQL2, CSS, Handlebars, bcrypt, and Bootstrap",
   };
-  const Natours = {
-    title: "Natours",
-    imgSrc: "natours--img.png",
-    deployed: "https://bg-natours.herokuapp.com/",
-    code: "https://github.com/Bgallag5/Natours",
-    description: "Natours is a fullstack MERN applicaiton designed for browsing and booking vacations! Natours users can create an account to browse our diverse vacation tour offers. Get back to nature with the Forrest Hiker Tour, or experience something completely new with the Northern Lights Tour.",
-    quip: "Life changing experiences, just clicks away.",
-    technologies: "React, MongoDB, Express, Node",
+  const FindFresh = {
+    title: "Find Fresh",
+    imgSrc: "findFresh.png",
+    deployed: "https://bgallag5.github.io/Find-nFresh/",
+    code: "https://github.com/Bgallag5/Find-nFresh",
+    description:
+      "FreshFind is an app that allows users to search for local farmers markets. It was built with the Spoontastic API, USDA Farmers Market API, and Google Maps.",
+    quip: "Farm to table. From home.",
+    technologies: "React, JavaScript, CSS, FindFresh API",
   };
-
 
   return (
     <div className="portfolio__container">
@@ -122,8 +121,8 @@ export default function PortfolioPage() {
       <Project props={Natours} />
       <Project props={Stocks} />
       <Project props={Pokemon} />
-      <Project props={Forkify} />
       <Project props={Bankist} />
+      <Project props={Forkify} />
       <Project props={MovieBox} />
       <Project props={FindFresh} />
     </div>
