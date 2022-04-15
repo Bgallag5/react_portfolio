@@ -14,7 +14,7 @@ export default function Hero() {
     window.scrollTo({
       left: p1Coords.left + window.scrollX,
       //subtract nav height from scroll distance
-      top: p1Coords.top + window.scrollY - navBar.height - 20,
+      top: p1Coords.top + window.scrollY -  (navBar.height * 2),
       behavior: "smooth",
     });
   };

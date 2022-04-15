@@ -1,56 +1,53 @@
-video{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-    animation-play-state: running;
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  animation-play-state: running;
 }
 
-.hero-container{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    object-fit: contain;
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
 }
 
-
-.about-section{
-    position: absolute;
-    display: flex; 
-    top: 75%;
-    left: 50%;
-    margin: -25% 0 0 -25%;
+.about-section {
+  position: absolute;
+  display: flex;
+  top: 75%;
+  left: 50%;
+  margin: -25% 0 0 -25%;
 }
 
 .about-section p {
-    color: var(--color-seven);
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    padding: 20px;
+  color: var(--color-seven);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  font-size: 30px;
+  padding: 20px;
 }
 
-#about-picture{
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    border-radius: 50%;
-    padding: 10px;
-    height: 25vh;
-    background: var(--color-seven);
+#about-picture {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 10px;
+  height: 25vh;
+  background: var(--color-seven);
 }
 
-.small-links li{
-padding-bottom: 5px;
-color: var(--color-four);
-cursor: pointer;
-width: fit-content;
+.small-links li {
+  padding-bottom: 5px;
+  color: var(--color-four);
+  cursor: pointer;
+  width: fit-content;
 }
 
-.small-link:hover{
-padding-bottom: 5px;
-color: var(--color-seven);
-font-size: large;
+.small-link:hover {
+  padding-bottom: 5px;
+  color: var(--color-seven);
+  font-size: large;
 }
-

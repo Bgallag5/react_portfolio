@@ -4,7 +4,7 @@ import PortfolioPage from "./components/pages/PortfolioPage";
 import Footer from "./components/Footer";
 import "./assets/css/App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ResumePage from "./components/Resume";
+import ResumePage from "./components/pages/ResumePage";
 import ScrollToTop from "./utils/ScrollToTop";
 
 export const AppContext = React.createContext();

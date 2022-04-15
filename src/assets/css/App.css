@@ -1,7 +1,6 @@
 /* @import_normalize; */
 @import "./Hero.css";
 @import "./Portfolio.css";
-@import "./ContactForm.css";
 @import "./Navbar.css";
 @import "./Footer.css";
 @import "./Resume.css";
@@ -24,7 +23,7 @@
 * {
   box-sizing: border-box;
   margin: 0 auto;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'Anek Bangla', sans-serif;
 }
 
 body {

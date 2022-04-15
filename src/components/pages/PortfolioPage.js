@@ -114,14 +114,6 @@ export default function PortfolioPage() {
     quip: "Life changing experiences, just clicks away.",
     technologies: "React, MongoDB, Express, Node",
   };
-  //   const WidgetWorld = {
-  //       title:
-  //       imgSrc:
-  //       deployed:
-  //       code:
-  //       description:
-  //       quip:
-  //   }
 
 
   return (
