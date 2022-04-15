@@ -17,7 +17,7 @@ Welcome! This is my personal portfolio where you can view my completed projects 
 [Portfolio](https://morning-badlands-17413.herokuapp.com/)
 
 ### Images
-
+<img width="1333" alt="Screen Shot 2022-04-15 at 1 26 01 PM" src="https://user-images.githubusercontent.com/82895658/163601886-88ae051f-d733-4dec-b741-bb2917ea642d.png">
 
 ### Technology Used
 * React
