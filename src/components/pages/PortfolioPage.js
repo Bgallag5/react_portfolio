@@ -41,6 +41,17 @@ export default function PortfolioPage() {
   }, []);
 
   //Project Data
+  const NatoursLanding = {
+    title: "Natours Landing Page",
+    imgSrc: "natoursLanding.png",
+    deployed: "https://bgallag5.github.io/Advanced_SASS/",
+    code: "https://github.com/Bgallag5/Advanced_SASS",
+    description:
+      "The Natours landing page is a stylish, fully responsive webpage that advertises the Natours website. This project allowed me to thoroughly practice many different CSS/SASS concepts, including: Responsive/Mobile design, BEM, Animations, Pseudo Elements, Mixins, and Lazy Loading. ",
+    quip: "Try it on your phone!",
+    technologies: "HTML, SASS, CSS, JavaScript",
+    className: "img--right",
+  };
   const Natours = {
     title: "Natours",
     imgSrc: "natours--img.png",
@@ -57,7 +68,7 @@ export default function PortfolioPage() {
     deployed: "https://bgstock-alert.herokuapp.com/",
     code: "https://github.com/Bgallag5/Stock_Alert",
     description:
-      `Stock alert my own recreation of the website https://stockalarm.io/. I build this project to practice recreating great looking websites as fast as possible in React. Compare it to the original to see how accurate my recreation is (with some upgrades included)`,
+      `Stock alert my own recreation of the website https://stockalarm.io/. I build this project to practice recreating great looking websites as fast as possible in React. Compare it to the original to see how accurate my recreation is (with some upgrades included).`,
     quip: "Trades EXACTLY when you need them",
     className: "img--right",
     technologies: "React, JavaScript, CSS, Google Fonts/Icons",
@@ -68,7 +79,7 @@ export default function PortfolioPage() {
     deployed: "https://pocket-trader.herokuapp.com/",
     code: "https://github.com/Bgallag5/pocketTrader",
     description:
-      "A full MERN stack + GraphQL application. Users can sign up to build their own team, and check out the leaderboards to see the best teams. Built with: MongoDB, Express, React, Node, and GraphQL",
+      "A full MERN stack + GraphQL application. Users can sign up to build their own team, and check out the leaderboards to see the best teams. Built with: MongoDB, Express, React, Node, and GraphQL.",
     quip: "A Pokemon team building game",
     technologies: "React, JavaScript, GraphQL, Express, Node.js, Bulma, CSS",
   };
@@ -118,6 +129,7 @@ export default function PortfolioPage() {
   return (
     <div className="portfolio__container">
       <Hero />
+      <Project props={NatoursLanding} />
       <Project props={Natours} />
       <Project props={Stocks} />
       <Project props={Pokemon} />
