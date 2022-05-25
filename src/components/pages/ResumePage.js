@@ -19,7 +19,7 @@ export default function ResumePage() {
             with a passion for making things work. As a developer, I get the
             most satisfaction from tackling unexpected or challenging problems
             that force me to expand my developer's toolkit. In November of 2021 I completed the George Washington University Full-Stack Developer Bootcamp, graduating with an 'A' as 
-            one of the top students in the class. Since then I have continued to learn on my own, completing Udemy courses on JavaScript, React, and Node. I've done most of my
+            one of the top students in the class. Since then I have continued to learn on my own, completing Udemy courses on JavaScript, React, SASS, and Node. I've done most of my
             work using the MERN stack (MongoDB, Express, React, Node), but I
             have also built projects with other technologies including MySQL, GraphQL,
             Handlebars, and PUG.

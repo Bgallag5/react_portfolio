@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import { AppContext } from "../App";
+import { NavLink } from "react-router-dom";
 
 export default function Hero() {
   const { activePage, setActivePage } = useContext(AppContext);
@@ -35,16 +36,18 @@ export default function Hero() {
           <p>Hello! My name is Ben and I like to code.</p>
           <ul className="mx-5 small-links">
             <li>
-              <span
+              <NavLink
                 onClick={() => setActivePage("Resume")}
                 className="small-link"
+                to={'/resume'}
+                
               >
                 Contact Me or View my Resume
                 <i
                   style={{ verticalAlign: "middle", fontSize: "20px" }}
                   className="fas fa-angle-double-right"
                 ></i>
-              </span>
+              </NavLink>
             </li>
             <li>
               <h2 onClick={handleScroll} className="view--projects small-link animate__animated animate__bounce">

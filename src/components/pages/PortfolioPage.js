@@ -47,7 +47,7 @@ export default function PortfolioPage() {
     deployed: "https://bgallag5.github.io/Advanced_SASS/",
     code: "https://github.com/Bgallag5/Advanced_SASS",
     description:
-      "The Natours landing page is a stylish, fully responsive webpage that advertises the Natours website. This project allowed me to thoroughly practice many different CSS/SASS concepts, including: Responsive/Mobile design, BEM, Animations, Pseudo Elements, Mixins, and Lazy Loading. ",
+    "The Natours landing page is a stylish, fully responsive webpage that advertises the Natours website. This project allowed me to thoroughly practice many different CSS/SASS concepts, including: Responsive/Mobile design, BEM, Animations, Pseudo Elements, Mixins, and Lazy Loading. ",
     quip: "Try it on your phone!",
     technologies: "HTML, SASS, CSS, JavaScript",
     className: "img--right",
@@ -58,9 +58,19 @@ export default function PortfolioPage() {
     deployed: "https://bg-natours.herokuapp.com/",
     code: "https://github.com/Bgallag5/Natours",
     description:
-      "Natours is a fullstack MERN application designed for browsing and booking vacations! Natours users can create an account to browse our diverse vacation tour offers. ",
+    "Natours is a fullstack MERN application designed for browsing and booking vacations! Natours users can create an account to browse our diverse vacation tour offers. ",
     quip: "Life changing experiences, just clicks away.",
     technologies: "React, MongoDB, Express, Node",
+  };
+  const Trillo = {
+    title: "Trillo Hotels",
+    imgSrc: "trillo.png",
+    deployed: "https://bgallag5.github.io/Advanced_SASS/",
+    code: "https://github.com/Bgallag5/Trillo_Hotels",
+    description: "A hotel booking page that displays photos, reviews, and general information about each hotel. ",
+    quip: "Hotel? Trillo!",
+    className: "img--right",
+    technologies: "React, HTML, SASS, CSS, JavaScript",
   };
   const Stocks = {
     title: "Stock Alert",
@@ -70,7 +80,6 @@ export default function PortfolioPage() {
     description:
       `Stock alert my own recreation of the website https://stockalarm.io/. I build this project to practice recreating great looking websites as fast as possible in React. Compare it to the original to see how accurate my recreation is (with some upgrades included).`,
     quip: "Trades EXACTLY when you need them",
-    className: "img--right",
     technologies: "React, JavaScript, CSS, Google Fonts/Icons",
   };
   const Pokemon = {
@@ -81,6 +90,7 @@ export default function PortfolioPage() {
     description:
       "A full MERN stack + GraphQL application. Users can sign up to build their own team, and check out the leaderboards to see the best teams. Built with: MongoDB, Express, React, Node, and GraphQL.",
     quip: "A Pokemon team building game",
+    className: "img--right",
     technologies: "React, JavaScript, GraphQL, Express, Node.js, Bulma, CSS",
   };
   const Bankist = {
@@ -91,7 +101,6 @@ export default function PortfolioPage() {
     description:
       "Need a new bank? Well keep looking because this is only a webpage. Bankist is a front end landing page for a fake bank with a concentration on simplicity, readability, and style.",
     quip: "When banking meets minimalism.",
-    className: "img--right",
     technologies: "React, JavaScript, CSS",
   };
   const Forkify = {
@@ -102,6 +111,7 @@ export default function PortfolioPage() {
     description:
       "Forkify is a recipe sharing application build with React, JavaScript, CSS, and the Forkify API. Search for recipies by ingredient name, bookmark your favorite recipes for later, and upload your own recipes for other users to try out.",
     quip: "Find it. Make it.",
+    className: "img--right",
     technologies: "React, JavaScript, CSS, Material UI, Forkify API",
   };
   const MovieBox = {
@@ -111,7 +121,6 @@ export default function PortfolioPage() {
     code: "https://github.com/Bgallag5/Movie_Box",
     description: `Movie Box is a full CRUD movie database application. The API is built with MySQL, Express, and Node. Users can create a profile, login, search movies, and leave reviews.`,
     quip: "Just like Netflix, but none of the movie are real!",
-    className: "img--right",
     technologies:
       "JavaScript, Node, Express, MySQL2, CSS, Handlebars, bcrypt, and Bootstrap",
   };
@@ -123,6 +132,7 @@ export default function PortfolioPage() {
     description:
       "FreshFind is an app that allows users to search for local farmers markets. It was built with the Spoontastic API, USDA Farmers Market API, and Google Maps.",
     quip: "Farm to table. From home.",
+    className: "img--right",
     technologies: "React, JavaScript, CSS, FindFresh API",
   };
 
@@ -131,6 +141,7 @@ export default function PortfolioPage() {
       <Hero />
       <Project props={NatoursLanding} />
       <Project props={Natours} />
+      <Project props={Trillo} />
       <Project props={Stocks} />
       <Project props={Pokemon} />
       <Project props={Bankist} />

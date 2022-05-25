@@ -46,6 +46,10 @@ video {
   width: fit-content;
 }
 
+.small-link{
+  color: var(--color-four);
+}
+
 .small-link:hover {
   padding-bottom: 5px;
   color: var(--color-seven);
