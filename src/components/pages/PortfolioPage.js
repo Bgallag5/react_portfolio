@@ -65,7 +65,7 @@ export default function PortfolioPage() {
   const Trillo = {
     title: "Trillo Hotels",
     imgSrc: "trillo.png",
-    deployed: "https://bgallag5.github.io/Advanced_SASS/",
+    deployed: "https://bg-trillo-hotels.herokuapp.com/",
     code: "https://github.com/Bgallag5/Trillo_Hotels",
     description: "A hotel booking page that displays photos, reviews, and general information about each hotel. ",
     quip: "Hotel? Trillo!",
