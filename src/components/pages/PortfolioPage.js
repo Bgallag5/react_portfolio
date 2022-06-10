@@ -41,6 +41,16 @@ export default function PortfolioPage() {
   }, []);
 
   //Project Data
+  const Meals2Go = {
+    title: "Meals 2 Go",
+    imgSrc: "meals2goalt.png",
+    deployed: "https://meals2go.herokuapp.com/",
+    code: "https://github.com/Bgallag5/Meals-2-Go",
+    description: 'A familiar feeling food ordering application. Users can add to, and edit their carts, and "place orders" on the checkout page.',
+    quip: "React Food Order App",
+    technologies: "React, React-Router, SASS, Mantine, EmailJS, Google Fonts/Icons",
+    className: "",
+  };
   const NatoursLanding = {
     title: "Natours Landing Page",
     imgSrc: "natoursLanding.png",
