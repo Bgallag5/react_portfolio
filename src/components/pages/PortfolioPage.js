@@ -88,7 +88,7 @@ export default function PortfolioPage() {
     deployed: "https://bgstock-alert.herokuapp.com/",
     code: "https://github.com/Bgallag5/Stock_Alert",
     description:
-      `Stock alert my own recreation of the website https://stockalarm.io/. I build this project to practice recreating great looking websites as fast as possible in React. Compare it to the original to see how accurate my recreation is (with some upgrades included).`,
+      `Stock alert is my own recreation of the website https://stockalarm.io/. I build this project to practice recreating great looking websites as fast as possible in React. Compare it to the original to see how accurate my recreation is (with some upgrades included).`,
     quip: "Trades EXACTLY when you need them",
     technologies: "React, JavaScript, CSS, Google Fonts/Icons",
   };

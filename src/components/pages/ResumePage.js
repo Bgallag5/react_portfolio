@@ -36,10 +36,11 @@ export default function ResumePage() {
               <p>Redux</p>
               <p>HTML</p>
               <p>CSS</p>
-              <p>Bulma</p>
+              <p>SASS</p>
               <p>Google Fonts/Icons</p>
             </div>
             <div className="tech-list">
+              <p>Mantine</p>
               <p>Express</p>
               <p>Node</p>
               <p>MySQL</p>
