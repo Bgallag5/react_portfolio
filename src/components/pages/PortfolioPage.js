@@ -149,6 +149,7 @@ export default function PortfolioPage() {
   return (
     <div className="portfolio__container">
       <Hero />
+      <Project props={Meals2Go} />
       <Project props={NatoursLanding} />
       <Project props={Natours} />
       <Project props={Trillo} />
