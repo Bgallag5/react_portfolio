@@ -48,7 +48,7 @@ export default function PortfolioPage() {
     code: "https://github.com/Bgallag5/Meals-2-Go",
     description: 'A familiar feeling food ordering application. Users can add to, and edit their carts, and "place orders" on the checkout page.',
     quip: "React Food Order App",
-    technologies: "React, React-Router, SASS, Mantine, EmailJS, Google Fonts/Icons",
+    technologies: "React, SASS, Mantine, EmailJS, Google Fonts/Icons",
     className: "",
   };
   const NatoursLanding = {

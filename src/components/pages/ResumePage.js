@@ -18,7 +18,7 @@ export default function ResumePage() {
             Hi! My name is Benjamin Gallagher and I am a fullstack web developer
             with a passion for making things work. As a developer, I get the
             most satisfaction from tackling unexpected or challenging problems
-            that force me to expand my developer's toolkit. In November of 2021 I completed the George Washington University Full-Stack Developer Bootcamp, graduating with an 'A' as 
+            that force me to expand my developers toolkit. In November of 2021 I completed the George Washington University Full-Stack Developer Bootcamp, graduating with an 'A' as 
             one of the top students in the class. Since then I have continued to learn on my own, completing Udemy courses on JavaScript, React, SASS, and Node. I've done most of my
             work using the MERN stack (MongoDB, Express, React, Node), but I
             have also built projects with other technologies including MySQL, GraphQL,

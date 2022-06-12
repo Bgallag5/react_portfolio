@@ -29,4 +29,5 @@
 body {
   /* background: url("/src/assets/images/img-3.jpeg"); */
   background: var(--color-eight);
+  margin: 0;
 }
